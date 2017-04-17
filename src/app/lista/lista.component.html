@@ -1,0 +1,32 @@
+<form>
+  <input type="text" class="form-control" name="fraza" placeholder="Szukaj..." [(ngModel)]="fraza">
+  <select class="form-control" name="woj" [(ngModel)]="woj">
+        <option value="">Wszystkie</option>
+        <option value="D">Dolnośląskie</option>
+        <option value="C">Kujawsko-Pomorskie</option>
+        <option value="L">Lubelskie</option>
+        <option value="F">Lubuskie</option>
+        <option value="E">Łódzkie</option>
+        <option value="K">Małopolskie</option>
+        <option value="W">Mazowieckie</option>
+        <option value="O">Opolskie</option>
+        <option value="R">Podkarpackie</option>
+        <option value="B">Podlaskie</option>
+        <option value="G">Pomorskie</option>
+        <option value="S">Śląskie</option>
+        <option value="T">Świętkorzyskie</option>
+        <option value="N">Warmińskio-Mazurskie</option>
+        <option value="P">Wielkopolskie</option>
+        <option value="Z">Zachodnio-pomorskie</option>
+        <option value="HP">Policja</option>
+  </select>
+</form>
+<div class="col-sm-12">
+  <table class="table table-striped">
+    <tr><th>Skrót</th><th>Nazwa</th></tr>
+    <tr *ngFor="let tab of tabs | filter: fraza | wojewodztwo: woj">
+      <td>{{tab.skrot}}</td>
+      <td>{{tab.nazwa}}</td>
+    </tr>
+  </table>
+</div>

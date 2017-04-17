@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+body
+  background: #57D1C9
+.container
+  background: white
+  border-radius: 10px
+  h1
+    text-align: center
+    height: 100%
+    margin-top: 30px
+    color: #57D1C9
+    font-size: 3.3em
+    font-weight: bolder
+  form
+    display: flex
+    justify-content: space-around
+    flex-direction: row
+    margin: 25px 0
+    input[type=text]
+      width: 75%
+      margin-bottom: 20px
+      position: relative
+    select
+      width: 20%
+  @media screen and(max-width: 500px)
+    form
+      flex-direction: column
+      input[type=text]
+        width: 100%
+      select
+        width: 100%
