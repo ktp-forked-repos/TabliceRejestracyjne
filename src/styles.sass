@@ -11,21 +11,80 @@ body
     color: #57D1C9
     font-size: 3.3em
     font-weight: bolder
-  form
-    display: flex
-    justify-content: space-around
-    flex-direction: row
-    margin: 25px 0
-    input[type=text]
-      width: 75%
-      margin-bottom: 20px
-      position: relative
-    select
-      width: 20%
-  @media screen and(max-width: 500px)
-    form
+  .col-xs-3
+    height: 130px
+    min-width: 235px
+    .info
+      border-radius: 10px
+      text-align: center
+      box-sizing: border-box
+      height: 90%
+      display: flex
+      align-items: center
       flex-direction: column
-      input[type=text]
-        width: 100%
-      select
+      h3
+        font-size: 2em
+        font-weight: bold
+      p
+        color: black
+      &.B
+        color: #7E57C2
+        border: 3px solid #7E57C2
+      &.C
+        color: #5C6BC0
+        border: 3px solid #5C6BC0
+      &.D
+        color: #26C6DA
+        border: 3px solid #26C6DA
+      &.E
+        color: #26A69A
+        border: 3px solid #26A69A
+      &.F
+        color: #66BB6A
+        border: 3px solid #66BB6A
+      &.G
+        color: #9CCC65
+        border: 3px solid #9CCC65
+      &.K
+        color: #D4E157
+        border: 3px solid #D4E157
+      &.L
+        color: #FFCA28
+        border: 3px solid #FFCA28
+      &.N
+        color: #FFA726
+        border: 3px solid #FFA726
+      &.O
+        color: #FF7043
+        border: 3px solid #FF7043
+      &.P
+        color: #ef5350
+        border: 3px solid #ef5350
+      &.R
+        color: #EC407A
+        border: 3px solid #EC407A
+      &.S
+        color: #AB47BC
+        border: 3px solid #AB47BC
+      &.T
+        color: #795548
+        border: 3px solid #795548
+      &.W
+        color: #BF360C
+        border: 3px solid #BF360C
+      &.Z
+        color: #424242
+        border: 3px solid #424242
+      &.H
+        color: #607D8B
+        border: 3px solid #607D8B
+
+
+
+@media screen and(max-width: 768px)
+  .container
+    .col-xs-3
+      width: 50%
+    @media screen and(max-width: 517px)
+      .col-xs-3
         width: 100%
